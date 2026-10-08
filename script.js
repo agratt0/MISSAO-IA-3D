@@ -5,16 +5,23 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
+   [
     {
         enunciado: "Ao ligar a televisão no noticiário da noite, você vê uma notícia urgente: a agência espacial internacional abriu inscrições para civis participarem da primeira missão de colonização de Marte. Qual o seu primeiro pensamento?",
         alternativas: [
             {
                 texto: "Isso é loucura, é perigoso demais para nós!",
-                afirmacao: "afirmacao"
+                afirmacao: [
+                    "Você sente receio diante dos riscos desconhecidos de explorar outro planeta.",
+                    "Sua prioridade inicial é garantir a segurança e estabilidade no ambiente terrestre."
+                ],
             },
             {
                 texto: "Isso é fascinante, eu preciso me inscrever!",
-                afirmacao: "afirmacao"
+                afirmacao: [
+                    "Seu espírito aventureiro e curiosidade pelo desconhecido o impulsionam imediatamente.",
+                    "Você enxerga a colonização espacial como uma oportunidade única para a história humana."
+                ],
             }
         ]
     },
@@ -23,11 +30,17 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Utilizar simuladores avançados e algoritmos de IA para projetar um ecossistema fechado de alta eficiência que recicle todos os recursos.",
-                afirmacao: "afirmacao"
+                afirmacao: [
+                    "Você prefere confiar na tecnologia de ponta e na automação para resolver problemas complexos.",
+                    "Sua abordagem foca no aproveitamento máximo de dados e otimização computacional."
+                ],
             },
             {
                 texto: "Pesquisar manuais clássicos de arquitetura de submarinos, conversar com colegas e adaptar ideias tradicionais com base em conhecimentos próprios.",
-                afirmacao: "afirmacao"
+                afirmacao: [
+                    "Você valoriza a cooperação humana e soluções já testadas pelo tempo.",
+                    "Sua metodologia prioriza o raciocínio prático e a adaptação de conceitos consagrados."
+                ],
             }
         ]
     },
@@ -36,11 +49,17 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Defendo que devemos concentrar todos os nossos esforços e dinheiro em resolver as crises climáticas e ambientais da Terra antes de pensar em outros planetas.",
-                afirmacao: "afirmacao"
+                afirmacao: [
+                    "Sua visão prioriza os problemas imediatos do nosso planeta natal.",
+                    "Você acredita que a preservação da Terra deve ser o foco financeiro e ético absoluto."
+                ],
             },
             {
                 texto: "Argumento que a tecnologia desenvolvida para Marte pode ser aplicada na Terra e que expandir nossa presença para o espaço garante a sobrevivência da humanidade a longo prazo.",
-                afirmacao: "afirmacao"
+                afirmacao: [
+                    "Você enxerga a exploração espacial como um motor de inovação tecnológica para o bem comum.",
+                    "Sua perspectiva pensa no futuro distante e no plano de contingência para a humanidade."
+                ],
             }
         ]
     },
@@ -49,28 +68,22 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Criar o desenho manualmente usando ferramentas digitais básicas de ilustração, focando na sua própria expressão artística.",
-                afirmacao: "afirmacao"
+                afirmacao: [
+                    "Você prefere imprimir sua identidade pessoal e visão artística diretamente no trabalho.",
+                    "Sua escolha reflete apreço pelo processo criativo autoral e artesanal."
+                ],
             },
             {
                 texto: "Utilizar um gerador de imagens avançado para criar uma representação fotorrealista hiperdetalhada da colônia marciana.",
-                afirmacao: "afirmacao"
-            }
-        ]
-    },
-    {
-        enunciado: "O projeto final de sobrevivência em grupo está atrasado e um dos seus colegas resolveu gerar todo o relatório técnico utilizando uma inteligência artificial em poucos segundos, sem revisar nada. O documento está pronto, mas genérico. O que você faz?",
-        alternativas: [
-            {
-                texto: "A tecnologia é útil, mas máquinas podem falhar ou inventar dados. É fundamental revisar o texto e adicionar análises e perspectivas humanas reais.",
-                afirmacao: "afirmacao"
-            },
-            {
-                texto: "Se a IA gerou o texto de forma rápida e coerente, não vejo problema em entregar o documento inteiro do jeito que está.",
-                afirmacao: "afirmacao"
+                afirmacao: [
+                    "Você aproveita o potencial das ferramentas gerativas para alcançar um alto nível de detalhamento visual.",
+                    "Sua abordagem foca em entregar um resultado impactante e fotorrealista com eficiência."
+                ],
             }
         ]
     }
-];
+]
+    },
 
 let atual = 0; 
 let perguntaAtual;
