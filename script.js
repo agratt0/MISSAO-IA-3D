@@ -4,7 +4,7 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
-const perguntas = [
+const perguntas = 
    [
     {
         enunciado: "Ao ligar a televisão no noticiário da noite, você vê uma notícia urgente: a agência espacial internacional abriu inscrições para civis participarem da primeira missão de colonização de Marte. Qual o seu primeiro pensamento?",
@@ -83,7 +83,7 @@ const perguntas = [
         ]
     }
 ]
-    },
+
 
 let atual = 0; 
 let perguntaAtual;
